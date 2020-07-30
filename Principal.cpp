@@ -3,6 +3,7 @@
 #include<stdlib.h>
 #include<time.h>
 #include"MetodosDeOrdenamiento.h"
+
 int opc=0;
 double Duracion=0,Inicio=0,Fin=0;
 void MenuPrincipal();
@@ -10,9 +11,9 @@ void CargarVector(double v1[],double v2[],double v3[],double v4[],double v5[],in
 int main(){
 	system("color 2");
 	int z=0,j=0,i=0,n=0,b=0,aux=0;
-	//pedimos el tamaño del vector
+	//pedimos el tamaÃ±o del vector
 	printf("\n Digite la cantidad de numeros que decea cargar: ");scanf("%d",&n);
-	//asignamos el tamaño al vector
+	//asignamos el tamaÃ±o al vector
 	double v1[n],v2[n],v3[n],v4[n],v5[n];
 	//llamamos la funcion
 	CargarVector(v1,v2,v3,v4,v5,n);
