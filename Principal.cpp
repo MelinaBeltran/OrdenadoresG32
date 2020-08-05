@@ -12,7 +12,7 @@ int main(){
 	system("color 2");
 	int z=0,j=0,i=0,n=0,b=0,aux=0;
 	//pedimos el tamaño del vector
-	printf("\n Digite la cantidad de numeros que decea cargar: ");scanf("%d",&n);
+	printf("\n Digite la cantidad de numeros que desea cargar: ");scanf("%d",&n);
 	//asignamos el tamaño al vector
 	double v1[n],v2[n],v3[n],v4[n],v5[n];
 	//llamamos la funcion
