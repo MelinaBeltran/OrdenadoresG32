@@ -5,12 +5,12 @@
 #include"MetodosDeOrdenamiento.h"
 
 int opc=0;
-double Duracion=0,Inicio=0,Fin=0;
 void MenuPrincipal();
 void CargarVector(double v1[],double v2[],double v3[],double v4[],double v5[],int n);
 int main(){
 	system("color 2");
 	int z=0,j=0,i=0,n=0,b=0,aux=0;
+	double Inicio=0,Fin=0;
 	//pedimos el tamaño del vector
 	printf("\n Digite la cantidad de numeros que desea cargar: ");scanf("%d",&n);
 	//asignamos el tamaño al vector
@@ -33,14 +33,13 @@ int main(){
 				}
 				//Finaliza el tiempo calculado del ordenador
 				Fin=time(NULL);
-				//calculamos el tiempo empleado
-				Duracion=Fin-Inicio;
-				printf("\nTiempo empleado: %.2lf",Duracion);
+				//se muestra el calculo del tiempo empleado
+				printf("\nTiempo empleado: %.2lf",(Fin-Inicio));
 				getch();	
 	 		break;}
 	 		case 2:{
 	 			system("cls");
-	 			Duracion=0;Inicio=0;Fin=0;
+	 			Inicio=0;Fin=0;
 	 			//Inicia calculando el tiempo del ordenador 
 	 			Inicio=time(NULL);
 	 			//llamamos el metodo de ordenado
@@ -51,14 +50,13 @@ int main(){
 	            }
 				//Finaliza el tiempo calculado del ordenador
 				Fin=time(NULL);
-				//calculamos el tiempo empleado
-				Duracion=Fin-Inicio;
-				printf("\nTiempo empleado: %.2lf",Duracion);
+				//se muestra el calculo del tiempo empleado
+				printf("\nTiempo empleado: %.2lf",(Fin-Inicio));
 				getch();
 			break;}
 			case 3:{
 				system("cls");
-				Duracion=0;Inicio=0;Fin=0;
+				Inicio=0;Fin=0;
 				//Inicia calculando el tiempo del ordenador 
 				Inicio=time(NULL);
 				//llamamos el metodo de ordenado
@@ -69,14 +67,13 @@ int main(){
 				}
 				//Finaliza el tiempo calculado del ordenador
 				Fin=time(NULL);
-				//calculamos el tiempo empleado
-				Duracion=Fin-Inicio;
-				printf("\nTiempo empleado: %.2lf",Duracion);
-				getch();	
+				//se muestra el calculo del tiempo empleado
+				printf("\nTiempo empleado: %.2lf",(Fin-Inicio));
+				getch();
 			break;}
 			case 4:{
 				system("cls");
-				Duracion=0;Inicio=0;Fin=0;
+				Inicio=0;Fin=0;
 				//Inicia calculando el tiempo del ordenador
 				Inicio=time(NULL);
 				//llamamos el metodo de ordenado
@@ -87,14 +84,13 @@ int main(){
 				}
 				//Finaliza el tiempo calculado del ordenador
 				Fin=time(NULL);
-				//calculamos el tiempo empleado
-				Duracion=Fin-Inicio;
-				printf("\nTiempo empleado: %.2lf",Duracion);
+				//se muestra el calculo del tiempo empleado
+				printf("\nTiempo empleado: %.2lf",(Fin-Inicio));
 				getch();
 			break;}	
 			case 5:{
 				system("cls");
-				Duracion=0;Inicio=0;Fin=0;
+				Inicio=0;Fin=0;
 				//Inicia calculando el tiempo del ordenador
 				Inicio=time(NULL);
 				//llamamos el metodo de ordenado
@@ -105,13 +101,18 @@ int main(){
 				}
 				//Finaliza el tiempo calculado del ordenador
 				Fin=time(NULL);
-				//calculamos el tiempo empleado
-				Duracion=Fin-Inicio;
-				printf("\nTiempo empleado: %.2lf",Duracion);
+				//se muestra el calculo del tiempo empleado
+				printf("\nTiempo empleado: %.2lf",(Fin-Inicio));
 				getch();
 			break;}
 			case 6:{
 				printf("FIN");		
+			break;}
+			default:{
+				system("cls");
+				system("color 4");
+				printf("\nERROR, opcion incorrecta digite nuevamente");
+				getch();
 			break;}
 		}
 	}while(opc!=6);
