@@ -9,6 +9,7 @@ void Burbuja(double v1[],int n){
 				v1[i]=v1[i+1];     
 				v1[i+1]=aux;     
 				b=1;    
+			
 			}   
 		}  
 	}while(b==1);    
