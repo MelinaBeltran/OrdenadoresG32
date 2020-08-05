@@ -22,7 +22,8 @@ void Insercion(double v2[],int n){
         while((posicion>0) && (v2[posicion-1]>aux)){
             v2[posicion] = v2[posicion -1];
             posicion--;
-        }
+       
+	}
         v2[posicion] = aux;
     }
 }
