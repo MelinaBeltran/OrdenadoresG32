@@ -24,11 +24,11 @@ int main(){
 			case 1:{
 				system("cls");
 				//Inicia calculando el tiempo del ordenador 
-			    Inicio=time(NULL);
-			    //llamamos el metodo de ordenamiento
+			        Inicio=time(NULL);
+			        //llamamos el metodo de ordenamiento
 				Burbuja(v1,n);
 				//mostramos los vectores ordenados
-				for(int i=1;i<n;i++){
+				for(int i=0;i<n;i++){
 					printf("%.0lf\t \t",v1[i]);
 				}
 				//Finaliza el tiempo calculado del ordenador
@@ -82,7 +82,7 @@ int main(){
 				//llamamos el metodo de ordenado
 				Quicksort(v4,0,n);
 				//mostramos los vectores ordenados	
-				for(int i=1;i<n;i++){
+				for(int i=1;i<=n;i++){
 					printf(" %.0lf\t \t",v4[i]);
 				}
 				//Finaliza el tiempo calculado del ordenador
