@@ -18,7 +18,7 @@ int main(){
 	//llamamos la funcion
 	CargarVector(v1,v2,v3,v4,v5,n);
 	do{
-		//llamamos la funcion
+		//llamamos la función
 		MenuPrincipal();
 		switch(opc){
 			case 1:{
