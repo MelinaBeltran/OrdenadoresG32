@@ -2,6 +2,8 @@
 void Burbuja(double v1[],int n){
 	int b=0,aux=0;
 	do{   
+		
+		
 		b=0;   
 		for(int i=0;i<(n-1);i++){    
 			if(v1[i]>v1[i+1]){     
