@@ -1,4 +1,4 @@
-//Metodo de ordenamiento por Bubuja Mejorada
+//Metodo de ordenamiento por Bubuja Mejorada//
 void Burbuja(double v1[],int n){
 	int b=0,aux=0;
 	do{   
