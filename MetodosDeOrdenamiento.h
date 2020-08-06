@@ -28,7 +28,7 @@ void Insercion(double v2[],int n){
         v2[posicion] = aux;
     }
 }
-//Metodo de ordenamiento por Seleccion
+//Metodo de ordenamiento por Seleccion//
 void Seleccion(double v3[],int n){
 	int k=0,menor=0,j=0;
 	for(int i=0;i<n;i++){
@@ -44,7 +44,7 @@ void Seleccion(double v3[],int n){
 		v3[i]=menor;
     }
 }
-//Metodo de ordenamiento por Quicksort
+//Metodo de ordenamiento por Quicksort//
 void Quicksort(double v4[],int izq,int der){
 	int i=izq;
 	int j=der,tmp;
@@ -71,7 +71,7 @@ void Quicksort(double v4[],int izq,int der){
 		Quicksort(v4,i,der);
 	}
 }
-//Metodo de ordenamiento por Mezcla
+//Metodo de ordenamiento por Mezcla//
 void Mezcla(double v5[],int n){
 	//Corta 
 	if(n==1){
