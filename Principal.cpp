@@ -22,6 +22,7 @@ int main(){
 		MenuPrincipal();
 		switch(opc){
 			case 1:{
+				
 				system("cls");
 				//Inicia calculando el tiempo del ordenador 
 			        Inicio=time(NULL);
