@@ -9,9 +9,8 @@ void Burbuja(double v1[],int n){
 				v1[i]=v1[i+1];     
 				v1[i+1]=aux;     
 				b=1;    
-			
 			}   
-		}  
+    }  
 	}while(b==1);    
 } 
 //Metodo de ordenamiento por Insercion//
@@ -23,8 +22,7 @@ void Insercion(double v2[],int n){
         while((posicion>0) && (v2[posicion-1]>aux)){
             v2[posicion] = v2[posicion -1];
             posicion--;
-       
-	}
+       }
         v2[posicion] = aux;
     }
 }
