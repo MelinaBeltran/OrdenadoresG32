@@ -109,10 +109,11 @@ int main(){
 			case 6:{
 				printf("FIN");		
 			break;}
-			default:{
+			default: printf("Opción NO válida");
+				{
 				system("cls");
 				system("color 4");
-				printf("\nERROR, opcion incorrecta digite nuevamente");
+				printf("\nERROR, opcion incorrecta digite nuevamente  ");
 				getch();
 			break;}
 		}
@@ -123,7 +124,7 @@ void CargarVector(double v1[],double v2[],double v3[],double v4[],double v5[],in
 	system("cls");
 	srand(time(NULL));
 	for(int i=0;i<n;i++){
-		//cargamos los vectores los vectores aleatorios
+		//cargamos los vectores aleatorios
 		v1[i]=(1+(rand()%100))*i;
 		v2[i]+=v1[i];
 		v3[i]+=v1[i];
