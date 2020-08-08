@@ -49,7 +49,7 @@ void Quicksort(double v4[],int izq,int der){
 	int j=der,tmp;
 	double p=v4[(izq+der)/2];
 	while(i<=j){
-		while(v4[i]<p){
+		while(v4[i]<p){ 
 			i++;
 		}
 		while(v4[j]>p){
