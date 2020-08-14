@@ -13,7 +13,7 @@ void Burbuja(double v1[],int n){
     }  
 	}while(b==1);    
 } 
-//Metodo de ordenamiento por Insercion//
+//Metodo de ordenamiento por Insercion
 void Insercion(double v2[],int n){
 	int posicion=0,aux=0,i=0;
 	for(int i=0; i<n; i++){
@@ -42,8 +42,8 @@ void Seleccion(double v3[],int n){
 		v3[k]=v3[i];
 		v3[i]=menor;
     }
-}
-//Metodo de ordenamiento por Quicksort//
+
+//	Metodo de ordenamiento por Quicksort
 void Quicksort(double v4[],int izq,int der){
 	int i=izq;
 	int j=der,tmp;
