@@ -24,8 +24,7 @@ void Insercion(double v2[],int n){
             posicion--;
        }
         v2[posicion] = aux;
-		
-		
+			
     }
 }
 //Metodo de ordenamiento por Seleccion//
