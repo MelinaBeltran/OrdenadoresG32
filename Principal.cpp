@@ -3,7 +3,6 @@
 #include<stdlib.h>
 #include<time.h>
 #include"MetodosDeOrdenamiento.h"
-
 int opc=0;
 void MenuPrincipal();
 void CargarVector(double v1[],double v2[],double v3[],double v4[],double v5[],int n);
@@ -22,7 +21,6 @@ int main(){
 		MenuPrincipal();
 		switch(opc){
 			case 1:{
-				
 				system("cls");
 				//Inicia calculando el tiempo del ordenador 
 			        Inicio=time(NULL);
@@ -46,7 +44,7 @@ int main(){
 	 			//llamamos el metodo de ordenado
 	 			Insercion(v2,n);
 	 			//mostramos los vectores ordenados
-			    for(int i=0;i<n;i++){
+			      for(int i=0;i<n;i++){
 		            printf(" %.0lf\t \t",v2[i]);
 	            }
 				//Finaliza el tiempo calculado del ordenador
@@ -97,7 +95,7 @@ int main(){
 				//llamamos el metodo de ordenado
 				Mezcla(v5,n);
 				//mostramos los vectores ordenados	
-				for(int g=1;g<n;g++){
+				for(int g=0;g<n;g++){
 					printf(" %.0lf\t \t",v5[g]);
 				}
 				//Finaliza el tiempo calculado del ordenador
@@ -109,11 +107,10 @@ int main(){
 			case 6:{
 				printf("FIN");		
 			break;}
-			default: printf("Opción NO válida");
-				{
+			default:{
 				system("cls");
 				system("color 4");
-				printf("\nERROR, opcion incorrecta digite nuevamente  ");
+				printf("\nERROR, opcion incorrecta digite nuevamente");
 				getch();
 			break;}
 		}
@@ -130,7 +127,7 @@ void CargarVector(double v1[],double v2[],double v3[],double v4[],double v5[],in
 		v3[i]+=v1[i];
 		v4[i]+=v1[i];
 		v5[i]+=v1[i];
-		printf("%.0lf \n",v1[i]);
+		printf("%.0lf  ",v1[i]);
 	}
 	getch();
 }
