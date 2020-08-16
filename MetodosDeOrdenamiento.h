@@ -10,24 +10,23 @@ void Burbuja(double v1[],int n){
 				v1[i+1]=aux;     
 				b=1;    
 			}   
-    }  
+		}  
 	}while(b==1);    
 } 
 //Metodo de ordenamiento por Insercion
 void Insercion(double v2[],int n){
 	int posicion=0,aux=0,i=0;
-	for(int i=0; i<n; i++){
+	for(int i=0;i<n; i++){
         posicion=i;
         aux=v2[i];
         while((posicion>0) && (v2[posicion-1]>aux)){
             v2[posicion] = v2[posicion -1];
             posicion--;
-       }
+        }
         v2[posicion] = aux;
-			
     }
 }
-//Metodo de ordenamiento por Seleccion//
+//Metodo de ordenamiento por Seleccion
 void Seleccion(double v3[],int n){
 	int k=0,menor=0,j=0;
 	for(int i=0;i<n;i++){
@@ -42,14 +41,13 @@ void Seleccion(double v3[],int n){
 		v3[k]=v3[i];
 		v3[i]=menor;
     }
-
-//	Metodo de ordenamiento por Quicksort
+}
+//Metodo de ordenamiento por Quicksort
 void Quicksort(double v4[],int izq,int der){
-	int i=izq;
-	int j=der,tmp;
+	int i=izq, j=der,tmp;
 	double p=v4[(izq+der)/2];
 	while(i<=j){
-		while(v4[i]<p){ 
+		while(v4[i]<p){
 			i++;
 		}
 		while(v4[j]>p){
@@ -70,9 +68,9 @@ void Quicksort(double v4[],int izq,int der){
 		Quicksort(v4,i,der);
 	}
 }
-//Metodo de ordenamiento por Mezcla//
+//Metodo de ordenamiento por Mezcla
 void Mezcla(double v5[],int n){
-	//Corta 
+	//Cuando la cantidad de numeros es igual a 1 entonces el metodo no se implementa y corta antes de empezar
 	if(n==1){
 	 	return;
 	}
@@ -86,6 +84,7 @@ void Mezcla(double v5[],int n){
   	}
   	Mezcla(izq,mitad);
   	Mezcla(der,n-mitad);
+  	
  	izq[0];der[0];v5[0];
 	int nIzq = mitad,nDer = (n-mitad),i=0,j=0,k=0;
  	while( ( i < nIzq ) && ( j < nDer )){
