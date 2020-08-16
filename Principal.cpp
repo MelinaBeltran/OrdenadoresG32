@@ -110,7 +110,9 @@ int main(){
 			default:{
 				system("cls");
 				system("color 4");
-				printf("\nERROR, opcion incorrecta digite nuevamente");
+	                        printf("------------------------------------------------------------------------------------------------------------------------------------------\n\n");
+				printf("\t\t\t\tERROR, opcion incorrecta digite nuevamente\n\n");
+				printf("------------------------------------------------------------------------------------------------------------------------------------------");
 				getch();
 			break;}
 		}
