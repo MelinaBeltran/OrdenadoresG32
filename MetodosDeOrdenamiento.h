@@ -85,7 +85,7 @@ void Mezcla(double v5[],int n){
   	Mezcla(izq,mitad);
   	Mezcla(der,n-mitad);
   	
- 	izq[0];der[0];v5[0];
+ 	izq[0];der[0];v5[n];
 	int nIzq = mitad,nDer = (n-mitad),i=0,j=0,k=0;
  	while( ( i < nIzq ) && ( j < nDer )){
   		if(izq[i] <= der[j]){
